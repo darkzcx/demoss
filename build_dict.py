@@ -2,22 +2,13 @@ import ahocorasick
 import cPickle
 from collections import defaultdict
 
-'''
+
+
 entity_list_file = './data/all_entity.txt'
 entity_out_path = './data/ent_ac.pkl'
 attr_list_file = './data/attr_mapping.txt'
 attr_out_path = './data/attr_ac.pkl'
 val_list_file = './data/Person_val.txt'
-
-'''
-
-dirhead='/Users/jane/ideaProjects/elasticQAPy2.7/code/kbdemo/data/'
-
-entity_list_file =dirhead+ 'all_entity.txt'
-entity_out_path = dirhead +'ent_ac.pkl'
-attr_list_file = dirhead +'attr_mapping.txt'
-attr_out_path = dirhead +'attr_ac.pkl'
-val_list_file = dirhead +'Person_val.txt'
 
 def dump_ac_entity_dict(list_file,out_path):
     A = ahocorasick.Automaton()
